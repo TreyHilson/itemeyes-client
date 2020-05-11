@@ -1,1 +1,19 @@
 @import '~bootstrap/scss/bootstrap';
+body {
+  font-family: 'EB Garamond', serif;
+  background-color: #b5caff;
+}
+
+.container {
+
+}
+
+img {
+  height: 33vh;
+  width: 33vh;
+}
+
+.gameboy {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 17px;
+}

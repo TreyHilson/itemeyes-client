@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Route } from 'react-router-dom'
-
+import Home from '../routes/Home'
 import AuthenticatedRoute from '../AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from '../AutoDismissAlert/AutoDismissAlert'
 import Header from '../Header/Header'
@@ -8,6 +8,7 @@ import SignUp from '../SignUp/SignUp'
 import SignIn from '../SignIn/SignIn'
 import SignOut from '../SignOut/SignOut'
 import ChangePassword from '../ChangePassword/ChangePassword'
+import ItemIndex from '../ItemCrud/ItemIndex'
 
 class App extends Component {
   constructor () {
@@ -54,6 +55,11 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
+          <Route path='/items' render={({ match }) => (
+            <ItemIndex match={match} msgAlert={this.msgAlert} user={user} />
+          )} />
+          <Route exact path='/' component={Home} />
+
         </main>
       </Fragment>
     )
