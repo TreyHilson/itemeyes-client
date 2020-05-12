@@ -5,22 +5,51 @@ body {
 }
 
 .center {
+  width: 50vh;
   position: fixed;
-  align-content: center;
   margin: 0 auto;
   left: 50vh;
   top: 10vh;
+  text-align: left;
+  overflow-wrap: normal;
+  font-size: 20px;
+
 }
 .itemIndex {
   display: inline-block;
   overflow: scroll;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 13px;
 }
 
 img {
-  height: 33vh;
+  height: 30vh;
   width: 33vh;
   border-radius: 8px;
   padding: 2px;
+}
+
+label {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+input {
+  width: 60vh;
+}
+
+textarea {
+  width: 60vh;
+  height: 30vh;
+  overflow-wrap: normal;
+}
+
+.formable {
+  top: 20vh;
+  left: 40vh;
+  position: fixed;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 13px;
 }
 
 .gameboy {
@@ -32,6 +61,12 @@ img {
   font-family: 'Press Start 2P', cursive;
   font-size: 13px;
 }
+.gameboy3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  top: 10vh;
+  position: fixed;
+}
 
 .icon {
 height: 11vh;
@@ -41,4 +76,30 @@ padding: 2px;
 bottom: 0;
 right: 0;
 position: fixed;
+}
+//  Links and href -----
+.links {
+  font-size: 13px;
+  font-style: italic;
+}
+
+a {
+  color: #302dfd;
+  &:hover {
+    color: #22c38e;
+  }
+}
+//      BUTTONS   ------
+.btn-gradient {
+text-decoration: none;
+background-color: #302dfd;
+&:hover {
+  color: #afc4ff; }
+padding: 10px 30px;
+display: inline-block;
+position: relative;
+border: 1px solid rgba(0,0,0,0.21);
+border-bottom: 4px solid rgba(0,0,0,0.21);
+border-radius: 4px;
+text-shadow: 0 1px 0 rgba(0,0,0,0.15);
 }

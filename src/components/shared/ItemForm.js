@@ -1,36 +1,46 @@
 import React from 'react'
 
 const ItemForm = ({ item, handleSubmit, handleChange }) => (
-  <form onSubmit={handleSubmit}>
-    <label>Desired Item </label>
+  <form className="formable" onSubmit={handleSubmit}>
+    <p className="gameboy">Desired Item </p>
     <input
       placeholder="Item Name"
       name="name"
       value={item.name || ''}
       onChange={handleChange}
     />
-    <label>Item Info</label>
-    <input
+    <br/>
+    <br/>
+    <br/>
+    <p className="gameboy">Item Info</p>
+    <textarea
       placeholder="item information"
       name="info"
       value={item.info || ''}
       onChange={handleChange}
     />
-    <label>Price</label>
+    <br/>
+    <br/>
+    <br/>
+    <p className="gameboy">Price</p>
     <input
       placeholder="Price Range"
       name="budget"
       value={item.budget || ''}
       onChange={handleChange}
     />
-    <label>Item Image URL</label>
+    <br/>
+    <br/>
+    <br/>
+    <p className="gameboy">Item Image URL</p>
     <input
       placeholder="insert URL for image"
       name="imageurl"
       value={item.imageurl || ''}
       onChange={handleChange}
     />
-    <button type="submit">Submit</button>
+    <br/>
+    <button className="btn-gradient" type="submit">Submit</button>
   </form>
 )
 

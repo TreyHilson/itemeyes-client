@@ -49,15 +49,16 @@ class Item extends Component {
       <div className="center">
         <img className="icon" src="https://media.giphy.com/media/6CiIHzivbQmPu/200w_d.gif"/>
         <h4>{item.name}</h4>
-        <p>Information: {item.info}</p>
-        <p>Price: {item.budget}</p>
+        <p>Information: </p>
+        <p>{item.info}</p>
+        <p>Price: $ {item.budget}</p>
         <p>Item Image: </p>
         <p><img src={item.imageurl}/></p>
-        <button onClick={this.destroy}>Delete Item</button>
+        <button className="btn-gradient" onClick={this.destroy}>Delete Item</button>
         <Link to={`/items/${this.props.match.params.id}/edit`}>
-          <button>Edit</button>
+          <button className="btn-gradient">Edit</button>
         </Link>
-        <Link to="/items"><button>Back to all items</button></Link>
+        <Link to="/items"><button className="btn-gradient">Back to all items</button></Link>
       </div>
     )
   }

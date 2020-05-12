@@ -5,7 +5,6 @@ import { changePassword } from '../../api/auth'
 import messages from '../AutoDismissAlert/messages'
 
 import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
 
 class ChangePassword extends Component {
   constructor () {
@@ -48,8 +47,9 @@ class ChangePassword extends Component {
 
     return (
       <div className="row">
-        <div className="col-sm-10 col-md-8 mx-auto mt-5">
+        <div className="center gameboy2 col-sm-10 col-md-8 mx-auto mt-5">
           <h3>Change Password</h3>
+          <br/>
           <Form onSubmit={this.onChangePassword}>
             <Form.Group controlId="oldPassword">
               <Form.Label>Old password</Form.Label>
@@ -62,6 +62,7 @@ class ChangePassword extends Component {
                 onChange={this.handleChange}
               />
             </Form.Group>
+            <br/>
             <Form.Group controlId="newPassword">
               <Form.Label>New Password</Form.Label>
               <Form.Control
@@ -73,12 +74,7 @@ class ChangePassword extends Component {
                 onChange={this.handleChange}
               />
             </Form.Group>
-            <Button
-              variant="primary"
-              type="submit"
-            >
-              Submit
-            </Button>
+            <button className="btn-gradient" type="submit">Submit</button>
           </Form>
         </div>
       </div>

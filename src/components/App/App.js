@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { Route } from 'react-router-dom'
 import Home from '../routes/Home'
+import Home2 from '../routes/Home2'
 import AuthenticatedRoute from '../AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from '../AutoDismissAlert/AutoDismissAlert'
 import Header from '../Header/Header'
@@ -71,6 +72,9 @@ class App extends Component {
           )}/>
           <AuthenticatedRoute user={user} exact path='/items/:id/edit' render={({ match }) => (
             <ItemEdit match={match} msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/home' render={({ match }) => (
+            <Home2 match={match} msgAlert={this.msgAlert} user={user} />
           )} />
 
         </main>

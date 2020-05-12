@@ -3,7 +3,7 @@ import React from 'react'
 // import OutlineButton from '../shared/OutlineButton'
 // import { Link } from 'react-router-dom'
 
-const Home = () => {
+const Home2 = () => {
   const backgroundImageUrl = 'https://media.giphy.com/media/6CiIHzivbQmPu/200w_d.gif'
 
   const styles = {
@@ -18,14 +18,14 @@ const Home = () => {
   }
 
   const whitebox = {
-    top: '22vh',
-    left: '22vh',
+    top: '17vh',
+    right: '17vh',
     position: 'fixed',
     display: 'inline',
     justifyContent: 'center',
     backgroundColor: '#ffeefe',
-    height: '20vh',
-    width: '40vh',
+    height: '24vh',
+    width: '44vh',
     borderRadius: '10px',
     boxShadow: '5px 10px',
     padding: '8px',
@@ -34,10 +34,12 @@ const Home = () => {
   return (
     <div style={styles}>
       <div style={whitebox}>
-        <h3 className="gameboy"> Welcome to ItemEyes! </h3>
-        <p className="gameboy2">A digital tool to help you store & visualize all the items on your wishlist!</p>
+        <h3 className="gameboy"> Did you know!? </h3>
+        <p className="gameboy2">According to research using brain imagery, visualization works because neurons in our brains, those electrically excitable cells that transmit information, interpret imagery as equivalent to a real-life action. </p>
+        <a className="gameboy links" href="https://www.huffpost.com/entry/visualization-goals_b_878424" target="blank">
+        -Huffpost </a>
       </div>
     </div>
   )
 }
-export default Home
+export default Home2

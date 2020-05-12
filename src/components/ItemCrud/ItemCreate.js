@@ -54,6 +54,20 @@ class ItemCreate extends Component {
   }
 
   render () {
+    const whitebox = {
+      bottom: '10vh',
+      right: '10vh',
+      position: 'fixed',
+      display: 'inline',
+      justifyContent: 'center',
+      backgroundColor: '#ffeefe',
+      height: '12vh',
+      width: '34vh',
+      borderRadius: '10px',
+      boxShadow: '5px 10px',
+      padding: '8px',
+      overflow: 'auto'
+    }
     const { item, createdId } = this.state
 
     let itemJsx
@@ -74,8 +88,13 @@ class ItemCreate extends Component {
     return (
       <div>
         <img className="icon" src="https://media.giphy.com/media/6CiIHzivbQmPu/200w_d.gif"/>
-        <h1> ItemEyes your item! </h1>
+        <h1 className="gameboy3"> ItemEyes your item! </h1>
         {itemJsx}
+        <div style={whitebox}>
+          <p className="gameboy2">Grab an Image url by right clicking on your desired image(two finger click using touchpad). </p>
+          <a className="gameboy links" href="https://www.duplichecker.com/blog/wp-content/uploads/2019/02/image-1.png" target="blank">
+          Example </a>
+        </div>
       </div>
     )
   }

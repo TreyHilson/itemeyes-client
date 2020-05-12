@@ -5,7 +5,6 @@ import { signIn } from '../../api/auth'
 import messages from '../AutoDismissAlert/messages'
 
 import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
 
 class SignIn extends Component {
   constructor () {
@@ -49,8 +48,9 @@ class SignIn extends Component {
 
     return (
       <div className="row">
-        <div className="col-sm-10 col-md-8 mx-auto mt-5">
+        <div className="center gameboy2 col-sm-10 col-md-8 mx-auto mt-5">
           <h3>Sign In</h3>
+          <br/>
           <Form onSubmit={this.onSignIn}>
             <Form.Group controlId="email">
               <Form.Label>Email address</Form.Label>
@@ -62,6 +62,7 @@ class SignIn extends Component {
                 placeholder="Enter email"
                 onChange={this.handleChange}
               />
+              <br/>
             </Form.Group>
             <Form.Group controlId="password">
               <Form.Label>Password</Form.Label>
@@ -74,12 +75,7 @@ class SignIn extends Component {
                 onChange={this.handleChange}
               />
             </Form.Group>
-            <Button
-              variant="primary"
-              type="submit"
-            >
-              Submit
-            </Button>
+            <button className="btn-gradient" type="submit">Submit</button>
           </Form>
         </div>
       </div>

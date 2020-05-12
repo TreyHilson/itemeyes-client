@@ -56,7 +56,6 @@ class ItemIndex extends Component {
       // Otherwise, display the items
       itemJSX = (
         <div>
-          <h3>Item List Page</h3>
           <ul>
             {items.map(item => (
               <Link to={`/items/${item.id}`} key={item.id}>
@@ -74,6 +73,8 @@ class ItemIndex extends Component {
       <div>
         <img className="icon" src="https://media.giphy.com/media/6CiIHzivbQmPu/200w_d.gif"/>
         <h1>Items Page</h1>
+        <br/>
+        <br/>
         <div>  {itemJSX} </div>
       </div>
     )
