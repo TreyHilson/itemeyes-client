@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 // Import Axios:
 import axios from 'axios'
@@ -20,7 +21,10 @@ class ItemIndex extends Component {
     // This is where our API request will go
     axios({
       url: `${apiUrl}/items`,
-      method: 'get'
+      method: 'get',
+      headers: {
+        Authorization: `Bearer ${this.props.user.token}`
+      }
     })
       .then(res => {
         console.log(res)
@@ -38,7 +42,8 @@ class ItemIndex extends Component {
   render () {
     // Destructure things from state:
     const { items } = this.state
-    console.log('this is items state', this.state)
+    // console.log('this is items state', this.state)
+    // console.log('this is items user token', this.props.user.token)
     let itemJSX
     // 3 states:
     // if items is `null`, we are loading
@@ -49,27 +54,28 @@ class ItemIndex extends Component {
       itemJSX = 'No items yet, go make some!'
     } else {
       // Otherwise, display the items
-      const itemsList = items.map(item => (
-        <li key={item.id}>
-          <h3>{item.name}</h3>
-          <p>Info: {item.info}</p>
-          <p>Price:$ {item.budget}</p>
-          <p>Item Image:</p>
-          <p><img src={item.imageurl}/></p>
-        </li>
-      ))
-
       itemJSX = (
-        <ul>
-          {itemsList}
-        </ul>
+        <div>
+          <h3>Item List Page</h3>
+          <ul>
+            {items.map(item => (
+              <Link to={`/items/${item.id}`} key={item.id}>
+                <div className="itemIndex" key={item.id}>
+                  {item.name}
+                  <p><img src={item.imageurl}/></p>
+                </div>
+              </Link>
+            ))}
+          </ul>
+        </div>
       )
     }
     return (
-      <React.Fragment>
+      <div>
+        <img className="icon" src="https://media.giphy.com/media/6CiIHzivbQmPu/200w_d.gif"/>
         <h1>Items Page</h1>
-        {itemJSX}
-      </React.Fragment>
+        <div>  {itemJSX} </div>
+      </div>
     )
   }
 }

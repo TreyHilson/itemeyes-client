@@ -9,6 +9,9 @@ import SignIn from '../SignIn/SignIn'
 import SignOut from '../SignOut/SignOut'
 import ChangePassword from '../ChangePassword/ChangePassword'
 import ItemIndex from '../ItemCrud/ItemIndex'
+import ItemCreate from '../ItemCrud/ItemCreate'
+import ItemShow from '../ItemCrud/ItemShow'
+import ItemEdit from '../ItemCrud/ItemEdit'
 
 class App extends Component {
   constructor () {
@@ -55,10 +58,20 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
-          <Route path='/items' render={({ match }) => (
+          { /* ----------------------- Begin Item Routes ------- */ }
+          <AuthenticatedRoute user={user} exact path='/items' render={({ match }) => (
             <ItemIndex match={match} msgAlert={this.msgAlert} user={user} />
           )} />
-          <Route exact path='/' component={Home} />
+          <Route exact path='/' component={Home} user={user} />
+          <AuthenticatedRoute user={user} path='/items-create' render={({ match }) => (
+            <ItemCreate match={match} msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} exact path="/items/:id" render={({ match }) => (
+            <ItemShow msgAlert={this.msgAlert} user={this.state.user} match={match} />
+          )}/>
+          <AuthenticatedRoute user={user} path='/items/:id/edit' render={({ match }) => (
+            <ItemEdit match={match} msgAlert={this.msgAlert} user={this.state.user} />
+          )} />
 
         </main>
       </Fragment>

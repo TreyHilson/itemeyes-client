@@ -4,16 +4,41 @@ body {
   background-color: #b5caff;
 }
 
-.container {
-
+.center {
+  position: fixed;
+  align-content: center;
+  margin: 0 auto;
+  left: 50vh;
+  top: 10vh;
+}
+.itemIndex {
+  display: inline-block;
+  overflow: scroll;
 }
 
 img {
   height: 33vh;
   width: 33vh;
+  border-radius: 8px;
+  padding: 2px;
 }
 
 .gameboy {
   font-family: 'Press Start 2P', cursive;
   font-size: 17px;
+}
+
+.gameboy2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 13px;
+}
+
+.icon {
+height: 11vh;
+width: 11vh;
+border-radius: 8px;
+padding: 2px;
+bottom: 0;
+right: 0;
+position: fixed;
 }
