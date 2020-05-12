@@ -27,7 +27,6 @@ class ItemIndex extends Component {
       }
     })
       .then(res => {
-        console.log(res)
         this.setState({ items: res.data.items })
       })
       .catch(err => {

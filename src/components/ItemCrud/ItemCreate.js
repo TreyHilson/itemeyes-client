@@ -61,7 +61,7 @@ class ItemCreate extends Component {
       display: 'inline',
       justifyContent: 'center',
       backgroundColor: '#ffeefe',
-      height: '12vh',
+      height: '17vh',
       width: '34vh',
       borderRadius: '10px',
       boxShadow: '5px 10px',

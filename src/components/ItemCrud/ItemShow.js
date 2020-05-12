@@ -15,7 +15,13 @@ class Item extends Component {
   }
 
   componentDidMount () {
-    axios(`${apiUrl}/items/${this.props.match.params.id}`)
+    axios({
+      url: `${apiUrl}/items/${this.props.match.params.id}`,
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${this.props.user.token}`
+      }
+    })
       .then(res => this.setState({ item: res.data.item }))
       .catch(console.error)
   }
