@@ -23,7 +23,10 @@ class Item extends Component {
   destroy = () => {
     axios({
       url: `${apiUrl}/items/${this.props.match.params.id}`,
-      method: 'DELETE'
+      method: 'DELETE',
+      headers: {
+        Authorization: `Bearer ${this.props.user.token}`
+      }
     })
       .then(() => this.setState({ deleted: true }))
       .catch(console.error)
@@ -38,7 +41,7 @@ class Item extends Component {
 
     if (deleted) {
       return <Redirect to={
-        { pathname: '/', state: { msg: 'Item succesfully deleted!' } }
+        { pathname: '/items', state: { msg: 'Item succesfully deleted!' } }
       } />
     }
 

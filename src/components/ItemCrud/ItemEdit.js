@@ -28,7 +28,7 @@ const ItemEdit = (props) => {
       method: 'PATCH',
       data: { item },
       headers: {
-        Authorization: `Bearer ${this.props.user.token}`
+        Authorization: `Bearer ${props.user.token}`
       }
     })
       .then(() => setUpdated(true))
