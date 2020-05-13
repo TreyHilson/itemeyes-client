@@ -16,8 +16,9 @@ body {
 
 }
 .itemIndex {
+  width: 60vh;
   display: inline-block;
-  overflow: scroll;
+  overflow-wrap: normal;
   font-family: 'Press Start 2P', cursive;
   font-size: 13px;
 }
@@ -63,7 +64,7 @@ textarea {
 }
 .gameboy3 {
   font-family: 'Press Start 2P', cursive;
-  font-size: 20px;
+  font-size: 26px;
   top: 10vh;
   position: fixed;
 }

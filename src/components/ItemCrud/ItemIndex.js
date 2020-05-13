@@ -71,10 +71,12 @@ class ItemIndex extends Component {
     return (
       <div>
         <img className="icon" src="https://media.giphy.com/media/6CiIHzivbQmPu/200w_d.gif"/>
-        <h1>Items Page</h1>
+        <h1 className="gameboy3">Items Page</h1>
         <br/>
         <br/>
-        <div>  {itemJSX} </div>
+        <br/>
+        <br/>
+        <div className="gameboy2">  {itemJSX} </div>
       </div>
     )
   }
