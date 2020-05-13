@@ -17,12 +17,12 @@ As a signed in user, I would like to create my own item with image from image ur
 As a signed in user, I would like to update my own item prospects .
 As a signed in user, I would like to delete my own items
 
-<img src="images/itemeyes1.png" width="100">
+<img src="images/itemeyes1.png" width="600">
 
-<img src="images/itemeyes2.png" width="100">
+<img src="images/itemeyes2.png" width="600">
 
-<img src="images/itemeyes3.png" width="100">
+<img src="images/itemeyes3.png" width="600">
 
-<img src="images/itemeyes4.png" width="100">
+<img src="images/itemeyes4.png" width="600">
 
-<img src="images/itemeyes5.png" width="100"> 
+<img src="images/itemeyes5.png" width="600"> 
