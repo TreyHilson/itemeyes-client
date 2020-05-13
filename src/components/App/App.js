@@ -70,7 +70,7 @@ class App extends Component {
           <AuthenticatedRoute user={user} exact path="/items/:id" render={({ match }) => (
             <ItemShow msgAlert={this.msgAlert} user={user} match={match} />
           )}/>
-          <AuthenticatedRoute user={user} exact path='/items/:id/edit' render={({ match }) => (
+          <AuthenticatedRoute user={user} path='/items/:id/edit' render={({ match }) => (
             <ItemEdit match={match} msgAlert={this.msgAlert} user={user} />
           )} />
           <AuthenticatedRoute user={user} exact path='/home2' render={({ match }) => (
