@@ -1,4 +1,4 @@
-<p>
+# Important Links
 Front End application: https://treyhilson.github.io/itemeyes-client/#/
 
 Front End Repository:https://github.com/TreyHilson/itemeyes-client
@@ -6,10 +6,6 @@ Api Repository: https://github.com/TreyHilson/itemeyes-api
 
 Development URL: https://rocky-falls-89890.herokuapp.com/
 
-
-
-Wireframe - https://imgur.com/8pKGwnl | https://imgur.com/Fet0oOI
-ERD - https://imgur.com/0KDQqGl
 </p>
 
 <p>
@@ -21,25 +17,27 @@ This would be if the user is looking to buy or sell items listed.
 
 </p>
 
-Concept:
+# Concept:
 <p>
 My goal was a minimum viable product (MVP) that could be built upon for a variation of uses in the future.
 Application where users can add desired items to list to visualize their goals and budget.
 This could be fun for niche things or items of rarity that don’t normally come up in the regular listings. App will utilize react.js and ability to insert image url.
 
 
-User stories -
-<p>As an unregistered user, I would like to sign up with email and password.</p>
-<p>As an unregistered user, I would like to see items listed</p>
-<p>As a registered user, I would like to sign in with email and password.</p>
-<p>As a signed in user, I would like to change password.</p>
-<p>As a signed in user, I would like to sign out.</p>
-<p>As a signed in user, I would like to create an item posting</p>
-<p>As a signed in user, I would like to create my own item with image from image url</p>
+# User stories -
+-As an unregistered user, I would like to sign up with email and password.
+-As an unregistered user, I would like to see items listed.
+-As a registered user, I would like to sign in with email and password.
+-As a signed in user, I would like to change password.
+-As a signed in user, I would like to sign out.
+-As a signed in user, I would like to create an item posting
+-As a signed in user, I would like to create my own item with image from image url.
 
-<p>As a signed in user, I would like to update my own item prospects.</p>
-<p>As a signed in user, I would like to delete my own items.</p>
-</p>
+-As a signed in user, I would like to update my own item prospects.
+-As a signed in user, I would like to delete my own items.
+
+
+# Application Screenshots:
 
 <img src="images/itemeyes1.png" width="800">
 
@@ -52,7 +50,7 @@ User stories -
 <img src="images/itemeyes4.png" width="800">
 
 
-## Installation (for developers) ##
+## Setup Steps & Information
 
 You may use the green download button to download .zip package of the entire development bundle.
 In the terminal or command prompt run "npm install" to install all dependencies from package.json.
@@ -82,3 +80,12 @@ npm run deploy: builds and deploys master branch
 * React-router-dom
 * Ruby
 * Rails
+
+# Wireframe
+
+<img src="images/wire1.png" width="800">
+
+<img src="images/wire2.png" width="800">
+
+# ERD
+<img src="images/erd.png" width="800">
