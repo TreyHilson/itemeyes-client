@@ -74,8 +74,6 @@ class ItemIndex extends Component {
         <h1 className="gameboy3">Items Page</h1>
         <br/>
         <br/>
-        <br/>
-        <br/>
         <div className="gameboy2">  {itemJSX} </div>
       </div>
     )
