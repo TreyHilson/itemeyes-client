@@ -6,6 +6,8 @@
 
 <p>
 Version 1.0
+</p>
+<p>
 Currently application is a tool for user to organize desired items and visualize their list digitally until they have the objects in the material world.
 User can create items into database from front end with item name, info, price, and imageurl to embed image onto their list.
 Future itirations would allow user to add a method to conctact the user.
@@ -21,16 +23,16 @@ This could be fun for niche things or items of rarity that don’t normally come
 
 
 # User stories -
--As an unregistered user, I would like to sign up with email and password.
--As an unregistered user, I would like to see items listed.
--As a registered user, I would like to sign in with email and password.
--As a signed in user, I would like to change password.
--As a signed in user, I would like to sign out.
--As a signed in user, I would like to create an item posting
--As a signed in user, I would like to create my own item with image from image url.
+- As an unregistered user, I would like to sign up with email and password.
+- As an unregistered user, I would like to see items listed.
+- As a registered user, I would like to sign in with email and password.
+- As a signed in user, I would like to change password.
+- As a signed in user, I would like to sign out.
+- As a signed in user, I would like to create an item posting
+- As a signed in user, I would like to create my own item with image from image url.
 
--As a signed in user, I would like to update my own item prospects.
--As a signed in user, I would like to delete my own items.
+- As a signed in user, I would like to update my own item prospects.
+- As a signed in user, I would like to delete my own items.
 
 
 # Application Screenshots:
