@@ -81,7 +81,7 @@ npm run deploy: builds and deploys master branch
 
 # Wireframe
 
-<img src="images/wire1.png" width="800">
+<img src="images/wire1.jpg" width="800">
 
 <img src="images/wire2.png" width="800">
 
