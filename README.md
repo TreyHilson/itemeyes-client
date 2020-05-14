@@ -1,12 +1,8 @@
 # Important Links
-Front End application: https://treyhilson.github.io/itemeyes-client/#/
-
-Front End Repository:https://github.com/TreyHilson/itemeyes-client
-Api Repository: https://github.com/TreyHilson/itemeyes-api
-
-Development URL: https://rocky-falls-89890.herokuapp.com/
-
-</p>
+- Front End application: https://treyhilson.github.io/itemeyes-client/#/
+- Front End Repository:https://github.com/TreyHilson/itemeyes-client
+- Api Repository: https://github.com/TreyHilson/itemeyes-api
+- Development URL: https://rocky-falls-89890.herokuapp.com/
 
 <p>
 Version 1.0
