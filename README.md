@@ -18,23 +18,27 @@ Currently application is a tool for user to organize desired items and visualize
 User can create items into database from front end with item name, info, price, and imageurl to embed image onto their list.
 Future itirations would allow user to add a method to conctact the user.
 This would be if the user is looking to buy or sell items listed.
+
 </p>
 
 Concept:
 <p>
+My goal was a minimum viable product (MVP) that could be built upon for a variation of uses in the future.
 Application where users can add desired items to list to visualize their goals and budget.
 This could be fun for niche things or items of rarity that don’t normally come up in the regular listings. App will utilize react.js and ability to insert image url.
-User stories -
-As an unregistered user, I would like to sign up with email and password.
-As an unregistered user, I would like to see items listed
-As a registered user, I would like to sign in with email and password.
-As a signed in user, I would like to change password.
-As a signed in user, I would like to sign out.
-As a signed in user, I would like to create an item posting
-As a signed in user, I would like to create my own item with image from image url
 
-As a signed in user, I would like to update my own item prospects .
-As a signed in user, I would like to delete my own items
+
+User stories -
+<p>As an unregistered user, I would like to sign up with email and password.</p>
+<p>As an unregistered user, I would like to see items listed</p>
+<p>As a registered user, I would like to sign in with email and password.</p>
+<p>As a signed in user, I would like to change password.</p>
+<p>As a signed in user, I would like to sign out.</p>
+<p>As a signed in user, I would like to create an item posting</p>
+<p>As a signed in user, I would like to create my own item with image from image url</p>
+
+<p>As a signed in user, I would like to update my own item prospects.</p>
+<p>As a signed in user, I would like to delete my own items.</p>
 </p>
 
 <img src="images/itemeyes1.png" width="800">
