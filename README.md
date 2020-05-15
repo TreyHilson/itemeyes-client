@@ -15,14 +15,14 @@ This would be if the user is looking to buy or sell items listed.
 
 </p>
 
-# Concept:
+# Concept
 <p>
 My goal was a minimum viable product (MVP) that could be built upon for a variation of uses in the future.
 Application where users can add desired items to list to visualize their goals and budget.
 This could be fun for niche things or items of rarity that don’t normally come up in the regular listings. App will utilize react.js and ability to insert image url.
 
 
-# User stories -
+# User stories
 - As an unregistered user, I would like to sign up with email and password.
 - As an unregistered user, I would like to see items listed.
 - As a registered user, I would like to sign in with email and password.
@@ -35,7 +35,7 @@ This could be fun for niche things or items of rarity that don’t normally come
 - As a signed in user, I would like to delete my own items.
 
 
-# Application Screenshots:
+# Application Screenshots
 
 <img src="images/itemeyes1.png" width="800">
 
@@ -64,7 +64,7 @@ npm run build: place bundled styles and scripts where index.html can find them
 npm run deploy: builds and deploys master branch
 
 
-## Technology Used ##
+# Technology Used
 
 
 * React
