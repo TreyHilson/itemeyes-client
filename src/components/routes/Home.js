@@ -17,7 +17,7 @@ const Home = () => {
   }
 
   const whitebox = {
-    bottom: '56vh',
+    bottom: '46vh',
     position: 'fixed',
     display: 'flex: in-line',
     justifyContent: 'center',
