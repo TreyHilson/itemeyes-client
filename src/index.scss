@@ -6,9 +6,8 @@ body {
 
 .center {
   width: 50vh;
-  position: fixed;
+justify-content: center;
   margin: 0 auto;
-  left: 50vh;
   top: 10vh;
   text-align: left;
   overflow-wrap: normal;
@@ -35,11 +34,12 @@ label {
 }
 
 input {
-  width: 60vh;
+  display: flex;
+  width: 40vh;
 }
 
 textarea {
-  width: 60vh;
+  width: 40vh;
   height: 30vh;
   overflow-wrap: normal;
 overflow: scroll;
@@ -47,20 +47,21 @@ overflow: scroll;
 
 .formable {
   top: 20vh;
-  left: 40vh;
-  position: fixed;
+
+  justify-content: center;
   font-family: 'Press Start 2P', cursive;
   font-size: 13px;
+  flex-direction: column;
 }
 
 .gameboy {
   font-family: 'Press Start 2P', cursive;
-  font-size: 17px;
+  font-size: 13px;
 }
 
 .gameboy2 {
   font-family: 'Press Start 2P', cursive;
-  font-size: 13px;
+  font-size: 11px;
 }
 .gameboy3 {
   font-family: 'Press Start 2P', cursive;

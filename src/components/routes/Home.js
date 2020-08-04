@@ -10,7 +10,6 @@ const Home = () => {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-
     height: '100vh',
     backgroundImage: `url(${backgroundImageUrl})`,
     backgroundPosition: 'center',
@@ -18,18 +17,16 @@ const Home = () => {
   }
 
   const whitebox = {
-    top: '22vh',
-    left: '22vh',
+    bottom: '56vh',
     position: 'fixed',
-    display: 'inline',
+    display: 'flex: in-line',
     justifyContent: 'center',
     backgroundColor: '#ffeefe',
-    height: '20vh',
-    width: '40vh',
     borderRadius: '10px',
     boxShadow: '5px 10px',
     padding: '8px',
-    overflow: 'auto'
+    overflow: 'auto',
+    opacity: '0.8'
   }
   return (
     <div style={styles}>

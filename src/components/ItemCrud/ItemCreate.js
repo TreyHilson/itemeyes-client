@@ -55,19 +55,24 @@ class ItemCreate extends Component {
 
   render () {
     const whitebox = {
-      bottom: '10vh',
-      right: '10vh',
+      right: '8vh',
+      bottom: '0vh',
       position: 'fixed',
-      display: 'inline',
+      width: '40vh',
+      display: 'flex',
       justifyContent: 'center',
       backgroundColor: '#ffeefe',
-      height: '17vh',
-      width: '34vh',
       borderRadius: '10px',
       boxShadow: '5px 10px',
       padding: '8px',
-      overflow: 'auto'
+      overflow: 'auto',
+      opacity: '0.8'
     }
+
+    const formBox = {
+      display: 'flex'
+    }
+
     const { item, createdId } = this.state
 
     let itemJsx
@@ -77,11 +82,13 @@ class ItemCreate extends Component {
       itemJsx = <Redirect to={`/items/${createdId}`}/>
     } else {
       itemJsx = (
-        <ItemForm
-          item={item}
-          handleChange={this.handleChange}
-          handleSubmit={this.handleSubmit}
-        />
+        <div style={formBox}>
+          <ItemForm
+            item={item}
+            handleChange={this.handleChange}
+            handleSubmit={this.handleSubmit}
+          />
+        </div>
       )
     }
 
@@ -91,9 +98,9 @@ class ItemCreate extends Component {
         <h1 className="gameboy3"> ItemEyes your item! </h1>
         {itemJsx}
         <div style={whitebox}>
-          <p className="gameboy2">Grab an Image url by right clicking on your desired image(two finger click using touchpad). </p>
+          <p className="gameboy2"> </p>
           <a className="gameboy links" href="https://www.duplichecker.com/blog/wp-content/uploads/2019/02/image-1.png" target="blank">
-          Example </a>
+  Grab an Image url. </a>
         </div>
       </div>
     )

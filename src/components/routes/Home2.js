@@ -17,15 +17,11 @@ const Home2 = () => {
     backgroundRepeat: 'no-repeat'
   }
 
-  const whitebox = {
-    top: '17vh',
-    right: '17vh',
-    position: 'fixed',
-    display: 'inline',
+  const whitebox2 = {
+    bottom: '4vh',
+    display: 'flex: in-line',
     justifyContent: 'center',
     backgroundColor: '#ffeefe',
-    height: '24vh',
-    width: '44vh',
     borderRadius: '10px',
     boxShadow: '5px 10px',
     padding: '8px',
@@ -33,11 +29,9 @@ const Home2 = () => {
   }
   return (
     <div style={styles}>
-      <div style={whitebox}>
-        <h3 className="gameboy"> Did you know!? </h3>
-        <p className="gameboy2">According to research using brain imagery, visualization works because neurons in our brains, those electrically excitable cells that transmit information, interpret imagery as equivalent to a real-life action. </p>
-        <a className="gameboy links" href="https://www.huffpost.com/entry/visualization-goals_b_878424" target="blank">
-        -Huffpost </a>
+      <div style={whitebox2}>
+        <h3 className="gameboy"> Welcome to ItemEyes! </h3>
+        <p className="gameboy2">Welcome!</p>
       </div>
     </div>
   )

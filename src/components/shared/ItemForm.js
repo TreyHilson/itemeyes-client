@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ItemForm = ({ item, handleSubmit, handleChange }) => (
-  <form className="formable" onSubmit={handleSubmit}>
+  <form className="formable" onSubmit={handleSubmit} >
     <p className="gameboy">Desired Item </p>
     <input
       required="required"
@@ -45,6 +45,10 @@ const ItemForm = ({ item, handleSubmit, handleChange }) => (
     />
     <br/>
     <button className="btn-gradient" type="submit">Submit</button>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
   </form>
 )
 

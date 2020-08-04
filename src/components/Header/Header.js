@@ -4,11 +4,13 @@ import Navbar from 'react-bootstrap/Navbar'
 
 const authenticatedOptions = (
   <Fragment>
-    <Nav.Link href="#home2">Home |</Nav.Link>
-    <Nav.Link href="#change-password">Change Password</Nav.Link>
-    <Nav.Link href="#sign-out">Sign Out</Nav.Link>
-    <Nav.Link href="#items">Show Items</Nav.Link>
-    <Nav.Link href="#items-create">Create Items</Nav.Link>
+    <Nav defaultActiveKey="/home" className="flex-column">
+      <Nav.Link href="#home2">Home |</Nav.Link>
+      <Nav.Link href="#change-password">Change Password</Nav.Link>
+      <Nav.Link href="#sign-out">Sign Out</Nav.Link>
+      <Nav.Link href="#items">Show Items</Nav.Link>
+      <Nav.Link href="#items-create">Create Items</Nav.Link>
+    </Nav>
   </Fragment>
 )
 
